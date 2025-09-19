@@ -14,9 +14,9 @@
     "@nestjs/event-emitter": "^3.0.1",
     "@nestjs/mongoose": "^10.0.0",
     "@nestjs/platform-express": "^10.0.0",
-    "@nestjs/platform-socket.io": "^10.0.0",
+    "@nestjs/platform-socket.io": "^10.4.20",
     "@nestjs/schedule": "^4.0.0",
-    "@nestjs/websockets": "^10.0.0",
+    "@nestjs/websockets": "^10.4.20",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.0",
     "crypto": "^1.0.1",
@@ -27,7 +27,7 @@
     "mongoose": "^8.0.0",
     "net": "^1.0.2",
     "node-cron": "^3.0.3",
-    "socket.io": "^4.7.0",
+    "socket.io": "^4.8.1",
     "tls": "^0.0.1"
   },
   "devDependencies": {

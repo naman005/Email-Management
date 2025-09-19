@@ -8,10 +8,11 @@ import {
   Delete,
   BadRequestException 
 } from '@nestjs/common';
-import { 
-  WebSocketGateway, 
-  WebSocketServer, 
-  SubscribeMessage 
+import {
+  WebSocketGateway,
+  WebSocketServer,
+  SubscribeMessage,
+  MessageBody,
 } from '@nestjs/websockets';
 import { Server } from 'socket.io';
 import { ImapService } from '../../services/imap.service';
@@ -30,6 +31,11 @@ import { OnEvent } from '@nestjs/event-emitter';
 export class EmailController {
   @WebSocketServer()
   server!: Server;
+
+  @SubscribeMessage('ping')
+  handlePing(@MessageBody() data: string): string {
+    return 'pong: ' + data;
+  }
 
   constructor(
     private readonly imapService: ImapService,
