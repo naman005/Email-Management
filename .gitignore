@@ -1,0 +1,9 @@
+# Ignore broken or unnecessary client folder
+/client
+
+# Ignore node_modules and build artifacts
+**/node_modules
+**/dist
+
+# Ignore environment variables
+**/.env

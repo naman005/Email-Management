@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    /* Language and module settings */
+    "target": "ES2022",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "paths": {
+      "*": ["node_modules/*", "src/types/*"]
+    },
+
+    /* Strictness */
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Decorators */
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+
+    /* CommonJS interop (fixes imap import issue) */
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}

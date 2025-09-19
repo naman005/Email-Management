@@ -1,0 +1,40 @@
+{
+  "name": "email-management-backend",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "nest build",
+    "start": "nest start",
+    "start:dev": "nest start --watch",
+    "start:prod": "node dist/main"
+  },
+  "dependencies": {
+    "@nestjs/common": "^10.0.0",
+    "@nestjs/config": "^4.0.2",
+    "@nestjs/core": "^10.0.0",
+    "@nestjs/event-emitter": "^3.0.1",
+    "@nestjs/mongoose": "^10.0.0",
+    "@nestjs/platform-express": "^10.0.0",
+    "@nestjs/platform-socket.io": "^10.0.0",
+    "@nestjs/schedule": "^4.0.0",
+    "@nestjs/websockets": "^10.0.0",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.0",
+    "crypto": "^1.0.1",
+    "dns": "^0.2.2",
+    "elasticsearch": "^16.7.3",
+    "imap": "^0.8.19",
+    "mailparser": "^3.6.5",
+    "mongoose": "^8.0.0",
+    "net": "^1.0.2",
+    "node-cron": "^3.0.3",
+    "socket.io": "^4.7.0",
+    "tls": "^0.0.1"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^10.0.0",
+    "@types/imap": "^0.8.37",
+    "@types/mailparser": "^3.4.6",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
